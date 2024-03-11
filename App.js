@@ -22,7 +22,7 @@ export default function App() {
 
     const loadPredefinedSounds = async () => {
         const soundURIs = [
-            require('./sounds/sound1.mp4'), // Replace with your actual file paths
+            require('./sounds/sound1.mp4'), 
             require('./sounds/sound2.mp4'),
             require('./sounds/sound3.mp4'),
         ];
@@ -38,7 +38,7 @@ export default function App() {
         const currentSound = currentSoundObj.sound;
 
         try {
-            // Check the playback status and take action accordingly
+            // Check the playback status 
             if (currentSoundObj.status === 'unloaded') {
                 await loadPredefinedSounds();
             }
@@ -200,7 +200,6 @@ export default function App() {
         try {
             const { sound } = await Audio.Sound.createAsync({ uri });
             await sound.playAsync();
-            // Optionally, you can keep track of the sound object for pausing or stopping it later.
         } catch (error) {
             console.error('Error playing recording from URI:', error);
         }
