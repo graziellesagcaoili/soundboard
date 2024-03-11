@@ -1,3 +1,5 @@
+Note: Only tested in iOs platform
+
 # Sound Recorder App
 
 This Sound Recorder App is a React Native application developed using Expo. It allows users to record audio, play back recordings, and also play predefined sound files. The app uses SQLite for storing recording URIs, enabling persistent storage of recordings between sessions.
